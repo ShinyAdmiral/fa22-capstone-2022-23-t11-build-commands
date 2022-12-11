@@ -39,7 +39,7 @@ cd C:\Build
 
 Rem Archive
 ren windows Stuffed%BUILD_NUMBER%
-powershell Compress-Archive Stuffed%BUILD_NUMBER%\%WORKSPACE%\buildv%BUILD_NUMBER%.zip
+powershell Compress-Archive Stuffed%BUILD_NUMBER%\ %WORKSPACE%\buildv%BUILD_NUMBER%.zip
 
 cd %WORKSPACE%
 

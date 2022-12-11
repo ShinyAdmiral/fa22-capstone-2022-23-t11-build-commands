@@ -4,7 +4,7 @@ SET PROJECT_NAME=D7ragon
 %PROJECT_FOLDER%
 %PROJECT_NAME%
 
-cd C:\Projects\%PROJECT_FOLDER%
+cd C:\%PROJECT_FOLDER%
 
 call :StartTimer
 
@@ -36,7 +36,7 @@ cd C:\Build
 
 Rem Archive
 ren windows Stuffed%BUILD_NUMBER%
-powershell Compress-Archive Stuffed%BUILD_NUMBER%\ %WORKSPACE%\buildv%BUILD_NUMBER%.zip
+powershell Compress-Archive Stuffed%BUILD_NUMBER%\%WORKSPACE%\buildv%BUILD_NUMBER%.zip
 
 cd %WORKSPACE%
 

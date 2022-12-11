@@ -1,14 +1,16 @@
 SET PROJECT_FOLDER=fa22-capstone-2022-23-t11.svn
 SET PROJECT_NAME=D7ragon
+Set U_VERSION=UE_5.1
 
 echo %PROJECT_FOLDER%
 echo %PROJECT_NAME%
+echo %U_VERSION%
 
 cd C:\%PROJECT_FOLDER%
 
 call :StartTimer
 
-svn cleanup
+svn cleanup 
 svn update --depth infinity -q
 
 if NOT "%ERRORLEVEL%"=="0" EXIT /B %ERRORLEVEL%

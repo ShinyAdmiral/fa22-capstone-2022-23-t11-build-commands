@@ -1,2 +1,2 @@
-"C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe" -projectfiles -project="C:\%PROJECT_FOLDER%\%PROJECT_NAME%.uproject" -game -rocket -progress
+"C:\Program Files\Epic Games\%U_VERSION%\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe" -projectfiles -project="C:\%PROJECT_FOLDER%\%PROJECT_NAME%.uproject" -game -rocket -progress
 EXIT /B %ERRORLEVEL%

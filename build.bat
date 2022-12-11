@@ -1,0 +1,2 @@
+Call "C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project=C:\Projects\%PROJECT_FOLDER%\%PROJECT_NAME%.uproject -noP4 -clientconfig=Shipping -serverconfig=Shipping -nocompile -nocompileeditor -installed -unrealexe="C:\Program Files\Epic games\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -utf8output -platform=Win64 -build -cook -map= -CookCultures=en -unversionedcookedcontent -ddc=InstalledDerivedDataBackendGraph -makebinaryconfig -distribution -compressed -stage -package -archive -archivedirectory=C:/Build/
+EXIT /B %ERRORLEVEL%

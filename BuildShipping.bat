@@ -8,7 +8,8 @@ cd C:\%PROJECT_FOLDER%
 
 call :StartTimer
 
-svn update --depth infinity --ignore-externals -q
+svn cleanup
+svn update --depth infinity -q
 
 if NOT "%ERRORLEVEL%"=="0" EXIT /B %ERRORLEVEL%
 
@@ -17,7 +18,7 @@ call :DisplayTimerResult
 
 cd %WORKSPACE%
 
-cd fa22-capstone-2022-23-t06-build-commands
+cd fa22-capstone-2022-23-t11-build-commands
 
 Call Generate.bat
 if NOT "%ERRORLEVEL%"=="0" EXIT /B %ERRORLEVEL%

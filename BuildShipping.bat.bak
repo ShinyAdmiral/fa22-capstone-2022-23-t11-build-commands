@@ -11,7 +11,7 @@ cd C:\%PROJECT_FOLDER%
 call :StartTimer
 
 svn cleanup 
-svn update --depth infinity -q --non-interactive --trust-server-cert
+svn update --depth infinity -q
 
 if NOT "%ERRORLEVEL%"=="0" EXIT /B %ERRORLEVEL%
 
